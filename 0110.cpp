@@ -7,6 +7,9 @@ typedef struct LinkedNode {
 	LinkedNode *link;
 }ListNode;
 
+void removeNode(ListNode **phead, ListNode *p, ListNode *removed);
+Element find(ListNode *phead, Element f);
+
 void insertNode(ListNode **phead, ListNode *p, ListNode *newNode) {
 	if (*phead == NULL) {//해드노드가 NULL
 		newNode->link = NULL; //(*newNode).link = NULL
